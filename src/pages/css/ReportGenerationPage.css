@@ -1,0 +1,148 @@
+/* Page container */
+.report-container {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+/* Heading */
+.report-container h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 25px;
+  color: #2c3e50;
+  letter-spacing: 0.5px;
+}
+
+/* Filter section */
+.filter-section {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+.filter-section label {
+  font-weight: 500;
+  color: #444;
+}
+
+.filter-section select {
+  margin-left: 8px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  transition: border-color 0.2s;
+}
+
+.filter-section select:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+/* Fetch button */
+.fetch-btn {
+  background-color: #3498db;
+  color: #fff;
+  font-weight: 600;
+  padding: 8px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.fetch-btn:hover {
+  background-color: #2980b9;
+}
+
+.fetch-btn:active {
+  transform: scale(0.97);
+}
+
+/* Month section */
+.month-section {
+  margin-top: 30px;
+}
+
+.month-section h3 {
+  font-size: 22px;
+  margin-bottom: 12px;
+  color: #34495e;
+}
+
+/* Table styling */
+.report-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 25px;
+  border-radius: 8px;
+  overflow: hidden;
+  font-size: 14px;
+}
+
+.report-table th,
+.report-table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.report-table thead {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.report-table tbody tr:nth-child(even) {
+  background-color: #fdfdfd;
+}
+
+.report-table tbody tr:hover {
+  background-color: #f1f7fd;
+}
+
+/* Monthly total row */
+.total-row {
+  background-color: #f0f4f8;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+/* Grand total section */
+.grand-total-section {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.grand-total-section h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #e74c3c;
+  font-weight: 700;
+}
+
+/* Grand total table */
+.grand-total-table th,
+.grand-total-table td {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 14px;
+}
+
+.grand-total-table thead {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.grand-total-table tbody tr td {
+  background-color: #fdecea;
+  color: #c0392b;
+}

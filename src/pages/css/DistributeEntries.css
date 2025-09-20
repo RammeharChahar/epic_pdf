@@ -1,0 +1,42 @@
+.distribute-container {
+  padding: 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.distribute-container h2 {
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.distribute-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.distribute-table th,
+.distribute-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.distribute-table th {
+  background: #3498db;
+  color: white;
+}
+
+.distribute-btn {
+  padding: 6px 12px;
+  background: #2ecc71;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.distribute-btn:hover {
+  background: #27ae60;
+}
