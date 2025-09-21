@@ -29,7 +29,7 @@ function UserDashboard() {
         return;
       }
 
-      const res = await fetch(`http://localhost:5000/api/entries/disabled`, {
+      const res = await fetch(`https://epic-pdf-backend.onrender.com/api/entries/disabled`, {
         headers: { Authorization: `Bearer ${token}` },
       });
 
@@ -51,7 +51,7 @@ function UserDashboard() {
     const user = JSON.parse(localStorage.getItem("user"));
 
 
-    const res = await fetch("http://localhost:5000/api/entries/add", {
+    const res = await fetch("https://epic-pdf-backend.onrender.com/api/entries/add", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

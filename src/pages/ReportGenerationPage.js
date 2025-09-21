@@ -17,7 +17,7 @@ const ReportGenerationPage = () => {
   const fetchReports = async () => {
     try {
       const res = await fetch(
-        `http://localhost:5000/api/reports?reportType=${reportType}&year=${year}`
+        `https://epic-pdf-backend.onrender.com/api/reports?reportType=${reportType}&year=${year}`
       );
       if (!res.ok) throw new Error("Failed to fetch report data");
 
@@ -85,6 +85,13 @@ const ReportGenerationPage = () => {
         </p>
       ) : (
         <>
+          {/* 🔥 Big heading above tables */}
+          <div className="report-heading">
+            {reportType === "Receive"
+              ? "📥 Receive Entries Report"
+              : "📤 Distribute Entries Report"}
+          </div>
+
           {Object.keys(groupedData).map((monthKey) => {
             const rows = groupedData[monthKey];
             const monthLabel = rows[0]?.month_label || `Month ${monthKey}`;

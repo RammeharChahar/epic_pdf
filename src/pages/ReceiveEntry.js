@@ -32,7 +32,7 @@ function ReceiveEntries() {
       const token = localStorage.getItem("token");
 
       const res = await fetch(
-        `http://localhost:5000/api/receive-entries/${month}/${day}`,
+        `https://epic-pdf-backend.onrender.com/api/receive-entries/${month}/${day}`,
         { headers: { Authorization: `Bearer ${token}` } }
       );
 
@@ -63,7 +63,7 @@ function ReceiveEntries() {
     try {
       const token = localStorage.getItem("token");
 
-      const res = await fetch("http://localhost:5000/api/receive-entries", {
+      const res = await fetch("https://epic-pdf-backend.onrender.com/api/receive-entries", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

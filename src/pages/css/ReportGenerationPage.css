@@ -146,3 +146,14 @@
   background-color: #fdecea;
   color: #c0392b;
 }
+.report-heading {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin: 25px 0;
+  padding: 15px;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #0077ff, #00c6ff);
+  color: white;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+}

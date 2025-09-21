@@ -19,7 +19,7 @@ function DistributeEntries() {
   useEffect(() => {
     const fetchEntries = async () => {
       try {
-        const res = await fetch("http://localhost:5000/api/distribution-entries");
+        const res = await fetch("https://epic-pdf-backend.onrender.com/api/distribution-entries");
         if (!res.ok) throw new Error("Failed to fetch entries");
         const data = await res.json();
         setEntries(data);
@@ -37,7 +37,7 @@ function DistributeEntries() {
   // Handle distribution update
   const handleDistribute = async (entry) => {
     try {
-      const res = await fetch("http://localhost:5000/api/distribution-entries", {
+      const res = await fetch("https://epic-pdf-backend.onrender.com/api/distribution-entries", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(entry),
