@@ -45,7 +45,7 @@ function Login({ setUser }) {
         } else {
           navigate("/user-dashboard");
         }
-      }, 5000);
+      }, 2000);
 
     } catch (err) {
       setError("Something went wrong. Try again.");

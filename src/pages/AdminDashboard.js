@@ -29,7 +29,7 @@ function AdminDashboard() {
       setLoggingOut(false);
       alert("✅ You have been logged out successfully!");
       navigate("/", { replace: true });
-    }, 3000);
+    }, 2000);
   };
 
   return (

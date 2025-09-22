@@ -89,7 +89,7 @@ function UserDashboard() {
       } else {
         setConfirmation(`❌ Error: ${data.error}`);
       }
-    }, 4000);
+    }, 2000);
   };
 
   // handle logout
